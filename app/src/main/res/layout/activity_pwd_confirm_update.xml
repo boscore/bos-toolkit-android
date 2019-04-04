@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PwdUpdateActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        app:contentInsetStart="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/update_txt_title"
+                style="@style/tool_bar_title_style"
+                android:text="@string/pwd_update_title" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingEnd="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="15dp"
+                android:scaleType="center"
+                android:src="@drawable/me_icon_return_default"
+                android:tag="info:alpha" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/pwd_linear_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.5dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/personal_txt_black"
+                        android:text="@string/pwd_confirm_txt_used"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/pwd_edit_used"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textColor="@color/personal_txt_black"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:inputType="textPassword"
+                        android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890"
+                        android:background="@drawable/pwd_edit_background"
+                        android:hint="@string/pwd_confirm_txt_used_tips"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:singleLine="true"
+
+                        />
+                </LinearLayout>
+
+
+
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.5dp"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/personal_txt_black"
+                        android:text="@string/pwd_update_txt_new"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/pwd_edit_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textColor="@color/personal_txt_black"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:inputType="textPassword"
+                        android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890"
+                        android:background="@drawable/pwd_edit_background"
+                        android:hint="@string/pwd_update_ipunt_new"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:singleLine="true"
+
+                        />
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.5dp"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/personal_txt_black"
+                        android:text="@string/pwd_update_txt_repeat"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/pwd_edit_repeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textColor="@color/personal_txt_black"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:background="@drawable/pwd_edit_background"
+                        android:hint="@string/pwd_update_ipunt_repeat"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.5dp"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/personal_txt_black"
+                        android:text="@string/pwd_update_txt_hint"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/pwd_edit_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textColor="@color/personal_txt_black"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:background="@drawable/pwd_edit_background"
+                        android:hint="@string/pwd_update_ipunt_hint"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:singleLine="true"
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/pwd_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="42.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="78dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/pwd_btn_drawable"
+                android:gravity="center"
+                android:text="@string/pwd_update_btn_txt"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

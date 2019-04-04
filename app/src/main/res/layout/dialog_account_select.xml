@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/select_export_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:background="@drawable/pwd_top_fillet"
+
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/select_export_constraint">
+
+        <RelativeLayout
+            android:id="@+id/select_export_relative"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/export_key_tite"
+                android:textColor="@color/personal_txt_black"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/select_export_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                app:srcCompat="@drawable/deta_icon_close_default" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/select_export_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/select_export_relative"
+            android:background="@color/personal_view_ash" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/select_export_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/select_export_btn"
+            android:layout_below="@+id/select_export_view"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorWhite" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/select_export_btn"
+            android:layout_width="match_parent"
+            android:layout_height="42.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/pwd_btn_drawable"
+            android:gravity="center"
+            android:text="@string/quote_btn_confirm"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

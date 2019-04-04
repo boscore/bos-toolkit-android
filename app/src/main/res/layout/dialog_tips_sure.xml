@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_tips_backdrop"
+        >
+        <RelativeLayout
+            android:layout_marginTop="13dp"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:text="@string/dialog_tips_title"
+                android:textColor="@color/personal_txt_black"
+                />
+
+
+
+        </RelativeLayout>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dialog_tips_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="3dp"
+            android:textSize="14sp"
+            android:gravity="center_horizontal"
+            android:text="@string/dialog_tips_delete"
+            android:textColor="@color/personal_txt_black"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/personal_view_ash"
+            >
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/dialog_tips_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/import_edit_hint_color"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="@string/cloud_management_cancel"
+                />
+            <View
+                android:layout_width="1dp"
+
+                android:layout_height="match_parent"
+                android:background="@color/personal_view_ash"
+                >
+
+            </View>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/dialog_tips_sure"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/dialog_txt_blue"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="@string/quote_btn_confirm"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

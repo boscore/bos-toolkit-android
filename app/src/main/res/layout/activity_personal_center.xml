@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <RelativeLayout
+       android:id="@+id/personal_rrlative"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/hed_img_bg_default"
+       >
+
+       <android.support.v7.widget.AppCompatImageView
+           android:id="@+id/personal_iamge"
+           android:layout_width="66dp"
+           android:layout_height="66dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="64dp"
+           app:srcCompat="@drawable/me_icon_head_default" />
+
+       <android.support.v7.widget.AppCompatTextView
+           android:id="@+id/personal_bos"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:layout_below="@+id/personal_iamge"
+           android:textColor="@color/colorWhite"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="12dp"
+           android:textSize="18dp"
+           android:text="@string/personal_txt_bos"
+           />
+
+       <android.support.v7.widget.AppCompatTextView
+           android:id="@+id/personal_dapp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/personal_bos"
+           android:textColor="@color/colorWhite"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="5dp"
+           android:textSize="18dp"
+
+
+           android:text="@string/personal_txt_dapp"
+           />
+
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@+id/personal_rrlative"
+        >
+        <RelativeLayout
+            android:id="@+id/personal_click_cloud"
+            android:layout_width="wrap_content"
+            android:background="@drawable/personal_click_select"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/me_icon_onedriver_default"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_txt_cloud"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="7dp"
+                    />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bos_icon_fanhui_default"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/personal_view_ash"
+                >
+            </View>
+
+        </RelativeLayout>
+<!---->
+        <RelativeLayout
+            android:id="@+id/personal_click_red"
+            android:layout_width="wrap_content"
+            android:background="@drawable/personal_click_select"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/me_icon_redpacket_default"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pop_man_red"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="7dp"
+                    />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bos_icon_fanhui_default"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/personal_view_ash"
+                >
+            </View>
+
+        </RelativeLayout>
+<!---->
+        <RelativeLayout
+            android:id="@+id/personal_click_pwd"
+            android:layout_width="wrap_content"
+            android:background="@drawable/personal_click_select"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/me_icon_ped_default"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_txt_password"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="7dp"
+                    />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bos_icon_fanhui_default"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/personal_view_ash"
+                >
+            </View>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/personal_click_forget"
+            android:layout_width="wrap_content"
+            android:background="@drawable/personal_click_select"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    app:srcCompat="@drawable/me_icon_password"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_txt_forget"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="8dp"
+                    />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bos_icon_fanhui_default"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/personal_view_ash"
+                >
+            </View>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/personal_click_language"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/personal_click_select"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/me_icon_yuyan_default" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/personal_txt_lang"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bos_icon_fanhui_default"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/personal_view_ash"
+                >
+
+            </View>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/personal_click_about"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/personal_click_select"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/me_icon_aboutme_default" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/personal_txt_about"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bos_icon_fanhui_default"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/personal_view_ash"
+                >
+
+            </View>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/personal_click_help"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/personal_click_select"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/me_icon_shiyong_default" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/personal_txt_help"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bos_icon_fanhui_default"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/personal_view_ash"
+                >
+
+            </View>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

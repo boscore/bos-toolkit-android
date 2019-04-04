@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <View
+        android:id="@+id/status_bar_fix"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/red_envelope_title_color"
+        android:tag="status" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/status_bar_fix"
+        android:layout_gravity="center"
+        android:background="@color/red_envelope_title_color"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/tool_bar_title_style"
+                android:text="@string/create_bos_account" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingEnd="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="15dp"
+                android:scaleType="center"
+                android:src="@drawable/me_icon_return_default"
+                android:tag="info:alpha" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/accounts_receivable"
+            android:textColor="@color/color_333"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/icon_copy"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/icon_copy"
+            android:text="@string/copy"
+            android:textColor="#A2AAB6"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/create_bos_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="15dp"
+        android:text=""
+        android:layout_marginTop="20dp"
+        android:background="@drawable/create_bos_account_edit_drawable"
+        android:textColor="@color/personal_txt_black"
+        android:hint="@string/input_receipt_account"
+        android:paddingLeft="5dp"
+        android:paddingStart="10dp"
+        android:textColorHint="#BEBEBE"
+        android:textCursorDrawable="@color/red_envelope_title_color"
+        android:textSize="20sp"
+        tools:ignore="RtlSymmetry" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/transfer_amount"
+            android:textColor="@color/color_333"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/create_bos_account_edit_drawable">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/create_bos_money"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:hint="0.1000"
+            android:paddingLeft="5dp"
+            android:paddingStart="10dp"
+            android:textColorHint="#BEBEBE"
+            android:textCursorDrawable="@color/red_envelope_title_color"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="BOS"
+            android:textColor="@color/color_333"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/remarks"
+            android:textColor="@color/color_333"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/create_bos_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/create_bos_account_edit_drawable"
+        android:gravity="top"
+        android:hint="@string/input_remark"
+        android:padding="10dp"
+        android:paddingLeft="5dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/color_333"
+        android:textColorHint="#BEBEBE"
+        android:textCursorDrawable="@color/red_envelope_title_color"
+        android:textSize="14sp"
+        tools:ignore="RtlSymmetry" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/transfer_prompt"
+        android:textColor="#E65062"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/transfer_prompt_str"
+        android:textColor="#968585"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/create_bos_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/red_envelope_btn_drawable"
+        android:gravity="center"
+        android:text="@string/tansfer"
+        android:textColor="@color/colorWhite"
+
+        android:textSize="18sp" />
+
+
+</LinearLayout>

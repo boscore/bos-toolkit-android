@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UpdatePowerActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        app:contentInsetStart="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/tool_bar_title_style"
+                android:text="@string/update_power_txt" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingEnd="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="15dp"
+                android:scaleType="center"
+                android:src="@drawable/me_icon_return_default"
+                android:tag="info:alpha" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        >
+        <LinearLayout
+            android:id="@+id/authority_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/personal_click_select"
+                android:layout_height="wrap_content"
+
+                >
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/update_power_txt_current"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_power_current"
+                    android:textColor="@color/found_coloc_check"
+                    android:textSize="14sp"
+
+                    />
+                <View
+                    android:id="@+id/update_power_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/update_power_txt_current"
+                    android:background="@color/personal_view_ash"
+                    >
+                </View>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/update_power_txt_key"
+                    android:layout_below="@+id/update_power_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EOS76WqP9QwV5WKkPJgNQBizvKuidEvTbHdVjpzllHqPRnyTEoHZtPZEOS76W"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/authority_linear_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/update_power_perove"
+                        android:textColor="@color/found_coloc_check"
+                        android:textSize="14sp"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/update_power_linear_click_renovate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        >
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bos_icon_shengcheng_default"
+                            />
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/update_power_public"
+                            android:layout_marginLeft="2dp"
+                            android:textColor="@color/update_power_txt_blue"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/update_power_txt_private"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="12sp"
+                    android:padding="10dp"
+                    android:text="@string/export_simple_key"
+                    android:background="@drawable/pwd_edit_background"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp"
+
+                >
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_power_public_update"
+                    android:textColor="@color/found_coloc_check"
+                    android:textSize="14sp"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/update_power_txt_public"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="12sp"
+                    android:padding="10dp"
+                    android:text="@string/export_simple_key"
+                    android:background="@drawable/pwd_edit_background"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/authority_linear_update"
+            android:layout_marginTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注意："
+                android:textColor="@color/authority_setting_txt_red"
+                android:textSize="13sp"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/update_power_tips"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="#FF968585"
+                android:textSize="12sp"
+                />
+
+
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/update_power_determine"
+            android:layout_width="match_parent"
+            android:layout_height="42.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/pwd_btn_drawable"
+            android:gravity="center"
+            android:text="@string/update_power_ensure"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

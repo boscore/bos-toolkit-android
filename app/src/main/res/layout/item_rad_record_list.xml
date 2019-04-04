@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/item_red_record_background"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_red_record_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0000"
+                android:textColor="#FF333333"
+                android:textSize="20sp"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_txt"
+                android:visibility="gone"
+                android:textColor="#FF333333"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_red_record_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已领取1/2"
+                android:textColor="@color/found_coloc_check"
+                android:textSize="12sp"
+                />
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/item_red_record_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12-15 24:54"
+                    android:textColor="@color/import_edit_hint_color"
+                    android:textSize="12sp"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/red_record_add"
+                    android:textColor="@color/import_edit_hint_color"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/main_contentPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_relati"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/main_relati"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@drawable/main_beack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <RadioButton
+                android:id="@+id/main_select"
+                style="@style/main_radio_style"
+                android:drawableTop="@drawable/main_select_drawable"
+                android:text="@string/main_account" />
+
+            <RadioButton
+                android:id="@+id/personal_select"
+                style="@style/main_radio_style"
+                android:drawableTop="@drawable/personal_select_drawable"
+                android:text="@string/main_personal" />
+
+
+        </RadioGroup>
+    </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.DrawerLayout>

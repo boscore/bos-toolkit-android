@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AuthoritySettingActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        app:contentInsetStart="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/tool_bar_title_style"
+                android:text="@string/authority_settin_title" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingEnd="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="15dp"
+                android:scaleType="center"
+                android:src="@drawable/me_icon_return_default"
+                android:tag="info:alpha" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:id="@+id/authority_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+       >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/personal_click_select"
+            android:layout_height="50dp"
+
+            >
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 >
+
+                 <android.support.v7.widget.AppCompatTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="24dp"
+                     android:layout_centerVertical="true"
+                    android:gravity="bottom"
+                     android:text="@string/authority_settin_txt_name"
+                     android:textColor="@color/found_coloc_check"
+                     android:textSize="14sp"
+
+                     />
+
+                 <android.support.v7.widget.AppCompatTextView
+                     android:id="@+id/authority_txt_name"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="-------"
+                     android:textColor="@color/personal_txt_black"
+                     android:textSize="20sp"
+                     android:layout_alignParentRight="true"
+                     />
+
+             </RelativeLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/personal_view_ash"
+                >
+            </View>
+
+        </RelativeLayout>
+
+
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/authority_recycler"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="20dp"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注意："
+            android:textColor="@color/authority_setting_txt_red"
+            android:textSize="13sp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/authority_settin_txt_tipes"
+            android:lineSpacingMultiplier="1.4"
+            android:textColor="#FF968585"
+            android:textSize="12sp"
+            />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

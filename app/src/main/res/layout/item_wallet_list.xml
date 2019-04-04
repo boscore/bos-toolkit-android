@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/item_wallet_click"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/qianbaosy_img_bg_default"
+        >
+       <LinearLayout
+           android:id="@+id/item_wallet_linear"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+           >
+           <android.support.v7.widget.AppCompatTextView
+               android:id="@+id/item_wallet_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="yunengwallet"
+               android:textColor="@color/colorWhite"
+               android:textSize="22sp"
+               />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:visibility="gone"
+                android:id="@+id/item_wallet_backups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="2dp"
+                app:srcCompat="@drawable/qianbaosy_icon_yun_default"
+                android:layout_marginStart="9dp" />
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/item_wallet_linear"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_wallet_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0000"
+                android:textColor="@color/colorWhite"
+                android:textSize="19sp"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/app_txt"
+                android:textColor="@color/colorWhite"
+                android:textSize="19sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

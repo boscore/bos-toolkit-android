@@ -1,0 +1,143 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion 28
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "io.bos.accountmanager"
+        multiDexEnabled true
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 2
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+}
+
+repositories {
+
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+//        maven { url "https://dl.bintray.com/haicheckerdev/maven" }
+    }
+
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+}
+
+
+dependencies {
+    api(name: 'msa-auth-for-android-debug', ext: 'aar')
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //noinspection GradleCompatible
+    api 'com.android.support:appcompat-v7:28.0.0'
+
+    //noinspection GradleDependency,GradleCompatible
+    api 'com.android.support.constraint:constraint-layout:1.1.3'
+    api 'android.arch.lifecycle:extensions:1.1.1'
+    api 'io.starteos:jeos:1.0.4'
+    api 'android.arch.lifecycle:runtime:1.1.1'
+    kapt 'android.arch.lifecycle:compiler:1.1.1'
+    //dagger2
+    api 'com.google.dagger:dagger:2.11'
+    kapt 'com.google.dagger:dagger-compiler:2.11'
+    kapt 'com.google.dagger:dagger-android-processor:2.11'
+    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+    //http
+    api 'com.squareup.retrofit2:retrofit:2.4.0'
+    api 'com.squareup.okhttp3:okhttp:3.12.0'
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    //utils
+    api 'com.google.code.gson:gson:2.8.5'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    api 'io.reactivex.rxjava2:rxkotlin:2.1.0'
+    //noinspection GradleCompatible
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //noinspection GradleCompatible
+    api 'com.android.support:design:28.0.0'
+    api 'de.hdodenhof:circleimageview:2.2.0'
+
+    // room
+    api 'android.arch.persistence.room:runtime:1.1.1'
+    kapt 'android.arch.persistence.room:compiler:1.1.1'
+    api 'android.arch.persistence.room:rxjava2:1.1.1'
+
+
+    api 'com.alibaba:arouter-api:1.3.1'
+    kapt 'com.alibaba:arouter-compiler:1.1.4'
+    api 'com.androidkun:XTabLayout:1.1.4'
+    api 'com.google.guava:guava:23.0-android'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+
+    // Include the sdk as a dependency
+//    api 'com.microsoft.services.msa:msa-auth:+'
+//    implementation('com.microsoft.graph:msa-auth-for-android-adapter:0.10.+') {
+//        exclude group: 'com.microsoft.services.msa'
+//    }
+    api 'com.microsoft.graph:msgraph-sdk-android:+'
+
+    api 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    api 'com.github.gittjy:LoadingDialog:1.0.2'
+//    compile 'com.microsoft.graph:msa-auth-for-android-adapter:0.10.+'
+    api 'org.apache.httpcomponents:httpcore:4.4.10'
+    //noinspection DuplicatePlatformClasses
+    api 'org.apache.httpcomponents:httpclient:4.5.6'
+
+
+}
+
+repositories {
+    flatDir { dirs 'libs' }
+    repositories { maven { url "https://jitpack.io" } }
+}

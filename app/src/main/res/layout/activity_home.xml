@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/home_img_bg_default">
+
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/bos_icon_toolkit_default" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/account_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:text="Born for DApps. Born for Usability"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:id="@+id/create_layout"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_above="@+id/import_layout"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/home_btn_shape_drawable">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/create_img"
+                android:layout_width="22dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="22dp"
+                android:src="@drawable/bos_icon_chuangjian_default" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_toEndOf="@+id/create_img"
+                android:layout_toRightOf="@+id/create_img"
+                android:text="@string/home_create_account"
+                android:textColor="@color/color_333"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="22dp"
+                android:layout_marginRight="22dp"
+                android:src="@drawable/bos_icon_fanhui_default" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/import_layout"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="140dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/home_btn_shape_drawable">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/import_img"
+                android:layout_width="22dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="22dp"
+                android:src="@drawable/bos_icon_daoru_default" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_toEndOf="@+id/import_img"
+                android:layout_toRightOf="@+id/import_img"
+                android:text="@string/home_import_account"
+                android:textColor="@color/color_333"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="22dp"
+                android:layout_marginRight="22dp"
+                android:src="@drawable/bos_icon_fanhui_default" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/language_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/language_switch_drawable"
+            android:drawableLeft="@drawable/home_icon_switch_default"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/home_icon_switch_default"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingEnd="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

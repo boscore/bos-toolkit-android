@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WalletManageActivity">
+
+    <RelativeLayout
+        android:id="@+id/wallet_manage_relativ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zhanghao_img_bg_default"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <RelativeLayout
+            android:id="@+id/wallet_manage_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/wallet_manage_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="2dp"
+                android:scaleType="center"
+                android:src="@drawable/me_icon_return_default"
+                android:tag="info:alpha" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/manage_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/wallet_manage_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wallet_manage_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="yunengwallet"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/wallet_manage_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="23.5pt"
+            android:layout_below="@+id/wallet_manage_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="454.265 BOS"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wallet_manage_linar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/wallet_manage_relativ">
+
+        <RelativeLayout
+            android:id="@+id/wallet_manage_click_norm"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/personal_click_select"
+            android:paddingLeft="15dp"
+            android:visibility="gone"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:srcCompat="@drawable/zhanghao_icon_peizhi_default" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/manage_txt_norm"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="14sp"
+                    android:layout_marginStart="7dp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/bos_icon_fanhui_default"
+                android:layout_alignParentEnd="true" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/personal_view_ash" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wallet_manage_click_keyStore"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/personal_click_select"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:srcCompat="@drawable/zhanghao_icon_xiane_default" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/manage_txt_store"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/bos_icon_fanhui_default" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/personal_view_ash"></View>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/wallet_manage_click_backups"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/personal_click_select"
+            android:paddingLeft="15dp"
+            android:visibility="gone"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/zhanghao_icon_yunbeif_default" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/manage_txt_backups"
+                    android:textColor="@color/personal_txt_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/bos_icon_fanhui_default" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/wallet_manage_install"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:background="@drawable/personal_click_select"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/wallet_manage_linar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/zhanghao_icon_shezhi_default" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="@string/manage_txt_install"
+                android:textColor="@color/personal_txt_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/bos_icon_fanhui_default" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:state_enabled="true">
+        <shape >
+            <corners android:radius="7dp" />
+            <solid android:color="@color/dialog_receive_btn_clock_flase"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false" android:state_enabled="true">
+        <shape>
+            <corners android:radius="7dp" />
+            <solid android:color="@color/dialog_receive_btn_clock"/>
+        </shape>
+    </item>
+
+    <item android:state_enabled="false">
+
+        <shape>
+            <corners android:radius="7dp" />
+            <solid android:color="@color/dialog_receive_btn_clock_flase"/>
+        </shape>
+    </item>
+
+</selector>

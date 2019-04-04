@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="213dp"
+        android:layout_height="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_tips_backdrop"
+        >
+        <RelativeLayout
+            android:layout_marginTop="13dp"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:text="@string/dialog_txt_title"
+                android:textColor="@color/personal_txt_black"
+                />
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/confirm_btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:paddingLeft="10dp"
+                android:paddingRight="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/deta_icon_close_default"
+                />
+
+
+        </RelativeLayout>
+        <ScrollView
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <android.support.v7.widget.AppCompatTextView
+              android:id="@+id/confirm_content"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginRight="15dp"
+              android:layout_marginLeft="15dp"
+              android:layout_marginTop="13dp"
+              android:lineSpacingExtra="3dp"
+              android:textSize="12sp"
+              android:gravity="center_horizontal"
+              android:text="@string/dialog_txt_content"
+              android:textColor="@color/personal_txt_black"
+              />
+      </LinearLayout>
+        </ScrollView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/personal_view_ash"
+            >
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/confirm_btn_sure"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:textColor="@color/import_edit_hint_color"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="@string/dialog_whether_txt_not"
+                />
+            <View
+                android:layout_width="1dp"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:background="@color/personal_view_ash"
+                >
+
+            </View>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/confirm_btn_immediately"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/dialog_txt_blue"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="@string/dialog_txt_my_immediately"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

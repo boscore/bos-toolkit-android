@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/account_select_drawable"
+        android:title="@string/main_account" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/personal_select_drawable"
+        android:title="@string/main_personal" />
+
+
+</menu>

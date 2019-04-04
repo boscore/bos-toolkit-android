@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="@color/colorWhite"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_authority_txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/authority_settin_txt_owner"
+                android:textColor="@color/found_coloc_check"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_authority_btn_update"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:background="@drawable/pwd_btn_drawable"
+                android:gravity="center"
+                android:text="@string/authority_settin_txt_update"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_authority_contene"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/personal_txt_black"
+            android:textSize="12sp"
+            android:padding="10dp"
+            android:text="@string/export_simple_key"
+            android:background="@drawable/pwd_edit_background"
+            />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

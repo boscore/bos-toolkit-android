@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#228BE9</color>
+    <color name="colorPrimaryDark_flse">#FF7FBEF5</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite_50">#80FFFFFF</color>
+    <color name="main_select_true">#228BE9</color>
+    <color name="main_select_state">#FF8895E2</color>
+    <color name="main_select_false">#A2AAB6</color>
+    <color name="personal_txt_black">#FF333333</color>
+    <color name="personal_view_ash">#EEEEEE</color>
+    <color name="pwd_coloc_txt">#FFBEBEBE</color>
+    <color name="pwd_coloc_edit">#EFF2F6</color>
+    <color name="security_coloc_change">#FFA2AAB6</color>
+    <color name="found_coloc_check">#FF666666</color>
+    <color name="import_key_edit">#80999999</color>
+    <color name="import_edit_hint_color">#FF999999</color>
+    <color name="import_txt_help">#228BE9</color>
+    <color name="import_clound_edit">#66D8D8D8</color>
+    <color name="export_edit_coloc">#59B4B8C3</color>
+    <color name="export_text_color">#283A65</color>
+    <color name="export_text_save">#F58223</color>
+    <color name="authority_setting_txt_red">#FFE65062</color>
+    <color name="update_power_txt_blue">#FF277EFD</color>
+    <color name="dialog_txt_blue">#FF3477FB</color>
+    <color name="color_333">#FF333333</color>
+    <color name="color_999">#FF999999</color>
+    <color name="color_999_70">#B3999999</color>
+
+    <color name="pop_txt_color">#999999</color>
+    <color name="new_red_txt_tipe">#FFA6B2C3</color>
+    <color name="new_red_txt_content">#FF968585</color>
+    <color name="cloud_management_txt">#FF526AF6</color>
+    <color name="new_red_title">#FFCE2344</color>
+    <color name="new_red_ben_flase">#FFE6637C</color>
+    <color name="red_envelope_title_color">#CE2344</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="dialog_receive_txt_color">#FF7A756E</color>
+    <color name="dialog_receive_btn_receive">#FFC63D38</color>
+    <color name="dialog_receive_btn_clock">#FFFCDBB2</color>
+    <color name="dialog_receive_btn_clock_flase">#FFFCE4C7</color>
+    <color name="red_succees_auspicious">#FF8F4600</color>
+    <color name="red_succees_light_gray">#0DA2AAB6</color>
+    <color name="red_succees_tips">#FFDDDDDD</color>
+    <color name="red_add_txt_coloc">#FF228BE9</color>
+    <color name="red_add_yellow">#FFFFFCDE</color>
+    <color name="account_list_txt_zi">#999999</color>
+
+</resources>

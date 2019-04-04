@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_cloud_manage_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/home_img_bg_default"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_cloud_manage_txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bosaccount"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_cloud_manage_txt_isimport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/item_txt_guide_color"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingTop="2dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:text="@string/clound_txt_imported"
+                android:textColor="@color/colorWhite_50"
+                android:textSize="8sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_cloud_manage_txt_isguide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/item_txt_guide_color"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingTop="2dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:text="@string/clound_txt_backups"
+                android:textColor="@color/colorWhite_50"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_cloud_manage_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/account_icon_select_default"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

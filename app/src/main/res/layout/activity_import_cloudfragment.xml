@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ImportCloudfragment">
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        >
+       <RelativeLayout
+           android:id="@+id/import_clound_relative"
+           android:layout_width="match_parent"
+           android:layout_height="157dp"
+           android:background="@drawable/background_fillet_grey"
+           >
+
+           <android.support.v7.widget.AppCompatImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:srcCompat="@drawable/bos_icon_yun_default"
+               android:layout_centerInParent="true"
+               />
+
+       </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/import_clound_account"
+            android:layout_width="match_parent"
+            android:layout_height="42.5dp"
+
+            android:layout_marginTop="105dp"
+            android:layout_below="@+id/import_clound_relative"
+            android:background="@drawable/pwd_btn_drawable"
+            android:gravity="center"
+            android:text="@string/import_title"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/import_clound_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/import_clound_account"
+            android:text="@string/import_txt_help"
+            android:visibility="gone"
+            android:textColor="@color/import_txt_help"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

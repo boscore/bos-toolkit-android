@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/envelope_img_redbg_default"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/dialog_receive_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/envelope_icon_shutdown_default"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/dialog_receive_imnage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/envelope_img_toolkit_default"
+            android:layout_centerHorizontal="true"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dialog_receive_content"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/dialog_receive_imnage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/dialog_receive_txt_color"
+            android:textSize="12sp"
+            android:padding="10dp"
+            android:lineSpacingMultiplier="1.4"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/dialog_receive_txt_background"
+            android:text=""
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/dialog_receive_btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/dialog_receive_btn_txt"
+            android:textColor="@color/dialog_receive_btn_receive"
+            android:background="@drawable/dialog_btn_red_receive"
+            android:layout_below="@+id/dialog_receive_content"/>
+
+
+
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>

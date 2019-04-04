@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/item_red_record_background">
+      <LinearLayout
+          android:layout_centerVertical="true"
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <android.support.v7.widget.AppCompatTextView
+              android:id="@+id/item_account_list_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="bosaccount"
+              android:textColor="@color/personal_txt_black"
+              android:textSize="20sp"
+
+              />
+          <android.support.v7.widget.AppCompatTextView
+              android:id="@+id/item_account_list_time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="2015-34-34 20:00"
+              android:textColor="@color/account_list_txt_zi"
+              android:textSize="12sp"
+              android:layout_marginTop="2dp"
+              />
+
+
+      </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            >
+      <android.support.v7.widget.AppCompatTextView
+          android:id="@+id/item_account_list_btn_import"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/import_txt_help"
+          android:padding="7dp"
+          android:textSize="12sp"
+          android:text="@string/item_account_btn_impunt"
+          android:background="@drawable/item_btn_monitor"
+          />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/item_account_list_btn_delete"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red_envelope_title_color"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textSize="12sp"
+                android:text="@string/cloud_management_delete"
+                android:background="@drawable/item_btn_red_delete"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

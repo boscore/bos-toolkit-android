@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/select_account"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/red_envelope_drawable">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/pay_account"
+            android:textColor="@color/color_333"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/select_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/account"
+            android:layout_toRightOf="@+id/account"
+            android:drawableEnd="@drawable/bos_icon_fanhui_default"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/bos_icon_fanhui_default"
+            android:gravity="end"
+            android:text="@string/choose_pay_account"
+            android:textColor="@color/color_999"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/red_envelope_drawable">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/ping"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/red_envelope_title_color"
+            android:gravity="center"
+            android:text="@string/ping"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            android:visibility="gone"
+            tools:ignore="SmallSp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/red_envelope_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/ping"
+            android:layout_toRightOf="@+id/ping"
+            android:text="@string/red_amount"
+            android:textColor="@color/color_333"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/bos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="BOS"
+            android:textColor="@color/color_333"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/red_envelope_amount"
+            android:layout_toLeftOf="@+id/bos"
+            android:layout_toRightOf="@+id/red_envelope_amount"
+            android:layout_toStartOf="@+id/bos"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="@string/red_envelope_amount_input_hint"
+            android:inputType="numberDecimal"
+            android:textColor="@color/color_333"
+            android:textColorHint="@color/color_999"
+            android:textCursorDrawable="@color/red_envelope_title_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/red_envelope_drawable">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/red_envelope_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/red_envelope_num"
+            android:textColor="@color/color_333"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/num"
+            android:textColor="@color/color_333"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/red_envelope_num"
+            android:layout_toLeftOf="@+id/num"
+            android:layout_toRightOf="@+id/red_envelope_num"
+            android:layout_toStartOf="@+id/num"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="@string/red_envelope_num_input_hint"
+            android:inputType="number"
+            android:textColor="@color/color_333"
+            android:textColorHint="@color/color_999"
+            android:textCursorDrawable="@color/red_envelope_title_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/congratulations"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/red_envelope_drawable"
+        android:gravity="top"
+        android:hint="@string/red_congratulations"
+        android:padding="15dp"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textCursorDrawable="@color/red_envelope_title_color"
+
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/red_transfer_hint"
+            android:textColor="#DA2727"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/envelope_icon_doubt_default"
+            tools:ignore="RtlSymmetry" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/red_envelope_btn_drawable"
+        android:gravity="center"
+        android:text="@string/money_into_red_envelope"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/refund_instructions"
+        android:textColor="@color/color_999"
+        android:textSize="12sp" />
+</LinearLayout>

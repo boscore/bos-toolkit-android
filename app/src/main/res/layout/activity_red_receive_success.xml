@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.RedReceiveSuccessActivity">
+
+    <RelativeLayout
+        android:id="@+id/red_success_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/receive_img_bigbg_default">
+
+        <View
+            android:id="@+id/red_succees_fix"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/red_envelope_title_color"
+            android:tag="status" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/red_succees_fix">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/tool_bar_title_style"
+                android:text="@string/red_succees_title" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingEnd="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="15dp"
+                android:scaleType="center"
+                android:src="@drawable/me_icon_return_default"
+                android:tag="info:alpha" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/red_success_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="5dp"
+                android:paddingRight="15dp"
+                android:text="@string/eos_red_my_red"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry"
+                android:paddingLeft="5dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/red_succees_iamge_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/red_success_relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        app:srcCompat="@drawable/receive_img_bigtoolkit_default" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/red_success_txt_launch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/red_succees_iamge_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="From yonghuming"
+        android:textColor="@color/color_999"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/red_succees_linear_mo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/red_success_txt_launch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="total"
+            android:textColor="@color/personal_txt_black"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/red_success_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="0.0000"
+            android:textColor="@color/personal_txt_black"
+            android:textSize="22sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/app_txt"
+            android:textColor="@color/personal_txt_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/red_success_txt_auspicious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/red_succees_linear_mo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="恭喜发财，大吉大利！"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/red_succees_auspicious"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/red_success_linear_tips"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/red_success_txt_auspicious"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/red_receive_success_keep_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/quantity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0000"
+                android:textColor="@color/personal_txt_black"
+                android:textSize="25sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/app_txt"
+                android:textColor="@color/personal_txt_black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/red_succees_tips"
+            android:textColor="@color/red_succees_tips"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/red_success_linear_tips"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_date"
+            android:textColor="@color/import_edit_hint_color"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/red_success_txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-12-18 17:56"
+            android:textColor="@color/import_edit_hint_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

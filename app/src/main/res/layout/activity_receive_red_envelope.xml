@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/status_bar_fix"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/red_envelope_title_color"
+        android:tag="status" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/status_bar_fix"
+        android:layout_gravity="center"
+        android:background="@color/red_envelope_title_color"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/tool_bar_title_style"
+                android:text="@string/red_envelope_receive" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingEnd="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="15dp"
+                android:scaleType="center"
+                android:src="@drawable/me_icon_return_default"
+                android:tag="info:alpha" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+
+        android:background="@drawable/envelope_img_bigbg_default">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/envelope_img_smallbg_default" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/red_packet"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/receive_red_envelope_frame"
+            android:gravity="top"
+            android:hint="@string/input_red_packet_receive"
+            android:padding="10dp"
+            android:textColor="@color/color_333"
+            android:textColorHint="@color/color_999"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/red_packet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/receive_red_envelope_btn"
+            android:paddingBottom="7.5dp"
+            android:paddingEnd="40dp"
+            android:paddingStart="40dp"
+            android:paddingTop="7.5dp"
+            android:text="GO"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/red_packet"
+            android:layout_marginTop="45dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/envelope_img_shell_default" />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toolkit_red"
+            android:textSize="23sp"
+            android:textColor="#FFE8D1"
+            android:layout_below="@+id/go"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/send_red_envelope"
+                android:textColor="#EDD9C5"
+                android:id="@+id/send_red_envelope"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="#EDD9C5" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/security_hint_found"
+                android:textColor="#EDD9C5"
+                android:id="@+id/create_account"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
